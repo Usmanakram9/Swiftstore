@@ -1,0 +1,84 @@
+/* NewCarousel.css */
+.carousel-container {
+  position: relative;
+  width: 95vw; 
+  overflow: hidden;
+  margin-left: -100px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.carousel-title {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.carousel {
+  display: flex;
+  gap: 10px; /* Adjust the gap between pictures */
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+  top: 160px;
+}
+
+.next {
+  right: 10px;
+  top: 160px;
+}
+
+.active {
+  opacity: 1;
+}
+/* NewCarousel.css */
+
+/* ... (previous styles) */
+
+.slide {
+  flex: 0 0 calc(25% - 10px); /* Adjust width and gap */
+  box-sizing: border-box;
+  text-align: center; /* Center the text */
+  position: relative; /* Added to position the price relative to the slide */
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all;
+  border-radius: 10px;
+}
+
+.slide img:hover{
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.384);
+}
+
+.product-name {
+  margin-top: 5px; /* Add some space between the image and text */
+  font-weight: bold; /* Add bold font weight to the product name */
+}
+
+.product-price {
+  color: #3498db; /* Set the color of the price */
+  margin-top: 5px; /* Add some space between the name and price */
+  font-size: 18px; /* Set the font size of the price */
+}
+
+/* ... (previous styles) */

@@ -1,0 +1,8 @@
+.navbar-scrolled {
+  transition: background 0.3s,;
+  background: transparent !important;
+  opacity: 0.8;
+  color: black;
+}
+
+

@@ -1,0 +1,49 @@
+/* CheckoutSteps.css */
+
+.checkout-steps {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-steps .nav-link {
+  color: #007bff; /* Blue text color */
+  background-color: #fff; /* White background */
+  border: 1px solid #007bff; /* Blue border */
+  border-radius: 5px;
+  padding: 8px 15px;
+  text-decoration: none;
+  position: relative;
+  margin-right: 10px; /* Adjust spacing between steps */
+}
+
+.checkout-steps .nav-link.disabled {
+  background-color: #6c757d; /* Gray background for disabled step */
+  border: 1px solid #6c757d; /* Gray border for disabled step */
+  color: #fff; /* White text color for disabled step */
+}
+
+.checkout-steps .nav-link.active {
+  border-bottom: 3px solid #007bff; /* Highlight active step with a bottom border */
+}
+
+.checkout-steps .arrow {
+  display: flex;
+  align-items: center;
+  color: #6c757d; /* Gray arrow color */
+}
+
+.checkout-steps .arrow::before {
+  content: '→'; /* Right arrow content */
+  margin: 0 5px; /* Adjust spacing between arrow and text */
+}
+
+/* Add hover effect for a better interactive experience */
+.checkout-steps .nav-link:hover {
+  background-color: #e2ecf9; /* Light blue background on hover */
+  border: 1px solid #007bff; /* Darker blue border on hover */
+  color: #0056b3; /* Darker blue text color on hover */
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
