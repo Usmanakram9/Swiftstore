@@ -106,10 +106,10 @@ const createProductReview = async (req, res) => {
     );
 
     if (alreadyReviewed) {
-      res.status(400);
-      throw new Error('Product already reviewed');
+      res.status(400).json({message: 'Product already reviewed'}); 
     }
 
+    else{
     const review = {
       name: req.user.name,
       rating: Number(rating),
@@ -127,6 +127,8 @@ const createProductReview = async (req, res) => {
 
     await product.save();
     res.status(201).json({ message: 'Review added' });
+
+  }
   } else {
     res.status(404);
     throw new Error('Product not found');
